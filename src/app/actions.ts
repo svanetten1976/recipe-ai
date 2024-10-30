@@ -6,6 +6,7 @@ export async function generateRecipe(formData: FormData) {
   });
 
   const res = JSON.parse(response.data?.body!);
+  debugger;
   const content = res.content[0].text;
   return content || "";
 }
